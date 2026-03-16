@@ -1,19 +1,17 @@
-import requests 
-
-BASE_URL = "https://jsonplaceholder.typicode.com"
+from utils.api_client import get 
 
 
 def test_posts_status():
-    response = requests.get(f"{BASE_URL}/posts")
+    response = get("posts")
     assert response.status_code == 200
 
 
 def test_users_status():
-    response = requests.get(f"{BASE_URL}/users")
+    response = get("users")
     assert response.status_code == 200
 
 
 def test_posts_not_empty():
-    response = requests.get(f"{BASE_URL}/posts")
+    response = get("posts")
     data = response.json()
     assert len(data) > 0
