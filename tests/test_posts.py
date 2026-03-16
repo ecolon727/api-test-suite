@@ -5,6 +5,12 @@ def test_posts_status():
     assert response.status_code == 200
 
 
+def test_specific_post(test_data):
+    post_id = test_data["valid_post_id"]
+    response = get(f"posts/{post_id}")
+    assert response.status_code == 200
+
+
 def test_users_status():
     response = get("users")
     assert response.status_code == 200
