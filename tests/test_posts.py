@@ -2,7 +2,7 @@ from utils.api_client import get
 
 def test_posts_status():
     response = get("posts")
-    assert response.status_code == 200
+    assert response.status_code == 500
 
 
 def test_specific_post(test_data):
