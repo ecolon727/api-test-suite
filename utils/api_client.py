@@ -1,6 +1,6 @@
 import requests 
+from config.settings import BASE_URL
 
-BASE_URL = "https://jsonplaceholder.typicode.com"
 
 def get(endpoint):
     url = f"{BASE_URL}/{endpoint}"

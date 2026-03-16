@@ -1,15 +1,21 @@
 # API Test Suite
 
-This project contains automated aPI tests written in Python.
+Automated API tests written in Python using pytest.
 
-Tools used:
+## Tools
+- Python
 - pytest
 - requests
 
-API tested:
+## API tested:
 https://jsonplaceholder.typicode.com
 
-Tests include:
-- status code validation
-- endpoint availability
-- response data validation
+## Test Coverage
+- Endpoint availability
+- Status code validation
+- Response data validation
+
+## Run Tests
+
+pip install 
+pytest

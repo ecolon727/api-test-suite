@@ -1,6 +1,5 @@
 from utils.api_client import get 
 
-
 def test_posts_status():
     response = get("posts")
     assert response.status_code == 200
