@@ -16,6 +16,13 @@ def test_users_status():
     assert response.status_code == 200
 
 
+def test_users_not_empty():
+    respone = get("users")
+    data = respone.json()
+
+    assert len(data) > 0
+
+
 def test_posts_not_empty():
     response = get("posts")
     data = response.json()
